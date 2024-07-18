@@ -5,6 +5,7 @@ from fastapi.responses import JSONResponse
 from ..BD.models import Contrat, User, Apprenant, Employeur, TypeContrat
 from ..service.dependencies import get_current_user, get_db
 import base64
+import bcrypt
 
 app = FastAPI()
 router = APIRouter(
